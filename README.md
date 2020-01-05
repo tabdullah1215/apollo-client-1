@@ -92,7 +92,12 @@ then mapped over in the return call
 ```js
 import { withApollo } from 'react-apollo';
 ```
+***create a wrapped component***
+```js
+function CharacterWithHOC()
 
+export default withApollo(CharacterWithHOC)
+```
 **deconstruct client instance passed into wrapped component**
 ```js
 function CharacterWithHOC({client}) {
